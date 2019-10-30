@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster|Audiowide|Great+Vibes|Comfortaa|Orbitron|Tajawal|Livvic|Fira+Sans|Unica+One|Rajdhani");
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: inherit;
+}
+
+:root {
+ --old-gold: #B8B42D;
+ --olive-drab: #697A21;
+ --wild-blue: #96ADC8;
+ --tea-green: #D7FFAB;
+ --unmellow-yellow: #FCFF6C;
+ --brown-yellow: #D89D6A;
+ --tuscan-red: #6D454C;
+ --spring-bud: #CACF85;
+ --cosmic-latte: #FFFCE8;
+ --mount-pink: #996888;
+ --sapphire-blue: #006BA6;
+ --ww-blue: #0C6CCE;
+ --great-vibes: 'Great Vibes', cursive;
+ --comfortaa: 'Comfortaa', cursive;
+ --orbitron: 'Orbitron', sans-serif;
+ --audiowide: 'Audiowide', cursive;
+ --rajdhani: 'Rajdhani', sans-serif;
+}
+
+/* Univeral Styles */
+
+html {
+ font-size: 10px;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+.btn {
+ padding: .7rem 1rem;
+ background: transparent;
+ border: 1px solid var(--ww-blue);
+ color: var(--ww-blue);
+ font-size: 1.2rem;
+ text-align: center;
+ display: inline-block;
+ border-radius: .5rem;
+ cursor: pointer;
+ transition: background-color 650ms ease-in-out, color 650ms ease-in-out;
+}
+
+.btn:hover {
+ background-color: var(--mount-pink);
+ color: var(--old-gold);
+}
+
+section {
+ padding: 5rem 0;
+}
+
+body {
+ background: var(--old-gold);
+}
+
+/* Header */
+
+#header {
+ width: 100%;
+ height: 7rem;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 1;
+}
+
+.container {
+ width: 100%;
+ max-width: 96rem;
+ margin: 0 auto;
+ padding: 0 1.5rem;
+}
+
+#nav {
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1rem 0;
+}
+
+.nav__brand {
+ width: 15rem;
+}
+
+.nav__btn {
+ display: flex;
+}
+
+.menu__icons {
+ font-size: 3.5rem;
+ color: var(--ww-blue);
+ cursor: pointer;
+}
+
+.nav__list {
+ width: 25rem;
+ height: 100vh;
+ background: var(--mount-pink);
+ position: fixed;
+ top: 0;
+ right: -26rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ z-index: 1500;
+ transition: all 650ms ease-in-out;
+}
+
+.nav__list.active {
+ right: 0;
+}
+
+.close {
+ position: absolute;
+ top: 1.5rem;
+ left: 2rem;
+}
+
+.nav__item {
+ margin: 1.5rem 0;
+}
+
+.nav__link {
+ color: var(--old-gold);
+ font-size: 2rem;
+}
