@@ -63,7 +63,7 @@ p {
  display: inline-block;
  border-radius: .5rem;
  cursor: pointer;
- transition: background-color 650ms ease-in-out, color 650ms ease-in-out;
+ transition: background-color 260ms ease-in-out, color 650ms ease-in-out;
 }
 
 .btn:hover {
@@ -131,7 +131,7 @@ body {
  align-items: center;
  justify-content: center;
  z-index: 1500;
- transition: all 650ms ease-in-out;
+ transition: all 260ms ease-in-out;
 }
 
 .nav__list.active {

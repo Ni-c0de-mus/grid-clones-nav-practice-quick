@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Arimo|Fira+Code|Fira+Sans|Heebo|Inconsolata|Josefin+Sans|Karla|Montserrat|Muli|Nanum+Gothic|Oxygen|Saira+Condensed|Source+Code+Pro|Staatliches|Titillium+Web|ZCOOL+XiaoWei&display=swap');
+
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: inherit;
+}
+
+:root {
+
+ /* Coolors */
+
+ --dark-gunmetal: #202030;
+ --trolley-grey: #7E8287;
+ --russet: #854D27;
+ --carrot-orange: #DD7230;
+ --still-d-grain: #F4C95D;
+ --ryb-blue: #004FFF;
+
+ --red-black: #000;
+ --tomato: #F06543;
+ --shiny-shamrock: #5FAD56;
+ --pineapple: #5C415D;
+ --licorice: #1C110A;
+ --antique-fuchsia: #995D81;
+ --prune: #6E0D25;
+ --dark-purple: #320A28;
+ --deep-ruby: #734B5E;
+ --m-vermillion: #D5573B;
+ --silver: #BFBDC1;
+ --raisin-black: #271F30;
+ --midnight-green: #114B5F;
+ --flame: #E4572E;
+ --french-blue: #0267C1;
+ --d-terracotta: #DB5461;
+ --smokey-black: #0A100D;
+ --deep-koamaru: #2B4162;
+ --tumbleweed: #D8A47F;
+ --japanese-indigo: #233D4D;
+ --tangelo: #FFAC81;
+ --alabaster: #EAF2E3;
+ --copper-penny: #B2675E;
+ --dark-gunmetal: #202030;
+ --dark-jungle: #14281D;
+ --mid-red-purple: #161032;
+ --leather-green: #283618;
+ --tart-orange: #FE4A49;
+ --jet: #34344A;
+ --light-salmon: #FAA275;
+ --vivid-orange: #F0A202;
+ --trolley-grey: #7E8287;
+ --zinnwaldite: #251605;
+ --prussian-blue: #003049;
+ --dark-scarlet: #650D1B;
+ --deer: #BB9457;
+ --burgundy: #710627;
+ --jelly-bean: #DE6B48;
+ --persian-orange: #DE9151;
+ --max-red: #DE1A1A;
+ --steel-teal: #628395;
+ --bright-navy-blue: #2D7DD2;
+ --feldgrau: #4C5B5C;
+ --bdazzled-blue: #26547C;
+ --onyx: #31393C;
+
+ /* Fonts */
+
+ --staatliches: 'Staatliches', cursive;
+--montserrat: 'Montserrat', sans-serif;
+--saira-cond: 'Saira Condensed', sans-serif;
+--zcool-xiawei: 'ZCOOL XiaoWei', serif;
+--muli: 'Muli', sans-serif;
+--titillium: 'Titillium Web', sans-serif;
+--fira-sans: 'Fira Sans', sans-serif;
+--fira-code: 'Fira Code', monospace;
+--nanum-gothic: 'Nanum Gothic', sans-serif;
+--arimo: 'Arimo', sans-serif;
+--inconsolata: 'Inconsolata', monospace;
+--heebo: 'Heebo', sans-serif;
+--oxygen: 'Oxygen', sans-serif;
+--josefin-cans: 'Josefin Sans', sans-serif;
+--karla: 'Karla', sans-serif;
+--source-code: 'Source Code Pro', monospace;
+--abel: 'Abel', sans-serif;
+}
+
+html {
+ font-size: 10px;
+ font-family: var(--karla), sans-serif;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+.circles {
+ width: 20rem;
+}
+
+nav {
+ background: var(--onyx);
+ height: 10vh;
+}
+
+.nav__list {
+ display: flex;
+ background: var(--persian-orange);
+ width: 50%;
+ height: 100%;
+ align-items: center;
+ justify-content: space-around;
+ margin-left: auto;
+}
+
+.nav__link {
+ color: var(--onyx);
+ font-size: 1.6rem;
+}
+
+.hero {
+ width: 100%;
+ height: 90vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.text h1 {
+ font-size: 3rem;
+ letter-spacing: .2rem;
+ color: var(--feldgrau);
+ margin-left: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+
+ .line {
+  width: 30px;
+  height: 3px;
+  background: var(--deer);
+  margin: 5px;
+ }
+
+ nav {
+  position: relative;
+ }
+
+ .menu__icons {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  z-index: 2;
+ }
+
+
+ .nav__list {
+  position: fixed;
+  background: var(--tumbleweed);
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(10rem at 110% -15%);
+  -webkit-clip-path: circle(10rem at 110% -15%);
+  transition: all 650ms ease-out;
+ }
+
+ .nav__list.open {
+  clip-path: circle(100rem at 90% -10%);
+  -webkit-clip-path: circle(100rem at 90% -10%);
+  transition: all 650ms ease-out;
+ }
+
+ .hero {
+  flex-direction: column;
+ }
+
+ .text {
+  margin-top: 3rem;
+ }
+
+ .nav__item {
+  opacity: ;
+ }
+
+ .nav__link {
+  font-size: 2.5rem;
+ }
+
+ .nav__item:nth-child(1) {
+  transition: all 500ms ease 200ms;
+ }
+
+ .nav__item:nth-child(2) {
+  transition: all 500ms ease 400ms;
+ }
+
+ .nav__item:nth-child(3) {
+  transition: all 500ms ease 600ms;
+ }
+
+ .nav-item.fade {
+  opacity: 1;
+ }
+}

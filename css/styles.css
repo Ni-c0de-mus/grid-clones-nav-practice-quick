@@ -132,7 +132,7 @@ img {
 }
 
 .close {
- color: var(--winter-green-dream);
+ color: var(--spanish-grey);
 }
 
 .nav__list {
@@ -166,7 +166,9 @@ img {
 
 .nav__link {
  font-size: 1.6rem;
- color: var(--winter-green-dream);
+ text-transform: uppercase;
+ letter-spacing: .3rem;
+ color: var(--spanish-grey);
  padding:
 
 }
